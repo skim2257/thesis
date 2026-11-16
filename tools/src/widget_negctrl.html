@@ -1,0 +1,35 @@
+<div class="widget nc" id="nc-widget">
+  <div class="w-head">
+    <p class="w-k">Interactive · Figure 3.5 and Ch. 3.3.3</p>
+    <h4 class="w-title">Nine ways to destroy an image</h4>
+    <p class="w-sub">Three permutations crossed with three regions. Pick a control to see what it does to the voxels and how each model responded.</p>
+  </div>
+  <div class="nc-body">
+    <div class="nc-grid" role="grid" aria-label="Negative control combinations">
+      <span class="nc-corner"></span>
+      <span class="nc-colh">Random</span><span class="nc-colh">Sample</span><span class="nc-colh">Shuffle</span>
+      <span class="nc-rowh">Full</span>
+      <button type="button" data-r="Full" data-p="Random" data-panel="b">b</button>
+      <button type="button" data-r="Full" data-p="Sample" data-panel="c">c</button>
+      <button type="button" data-r="Full" data-p="Shuffle" data-panel="d" class="on">d</button>
+      <span class="nc-rowh">ROI</span>
+      <button type="button" data-r="ROI" data-p="Random" data-panel="e">e</button>
+      <button type="button" data-r="ROI" data-p="Sample" data-panel="f">f</button>
+      <button type="button" data-r="ROI" data-p="Shuffle" data-panel="g">g</button>
+      <span class="nc-rowh">Background</span>
+      <button type="button" data-r="Background" data-p="Random" data-panel="h">h</button>
+      <button type="button" data-r="Background" data-p="Sample" data-panel="i">i</button>
+      <button type="button" data-r="Background" data-p="Shuffle" data-panel="j">j</button>
+    </div>
+    <div class="nc-detail" aria-live="polite">
+      <p class="nc-name" id="ncName">Full × Shuffle</p>
+      <p class="nc-desc" id="ncDesc"></p>
+      <ul class="nc-res">
+        <li><span class="nc-model">Aerts survival signature</span><span class="nc-eff" id="ncA"></span></li>
+        <li><span class="nc-model">Choi HPV signature</span><span class="nc-eff" id="ncC"></span></li>
+        <li><span class="nc-model">FMCIB foundation model</span><span class="nc-eff" id="ncF"></span></li>
+      </ul>
+      <p class="nc-note">Letters match the panels of Figure 3.5. Image geometry is kept, so the tumour mask and its volume never change.</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<section class="cohort" id="cohort" data-short="The RADCURE cohort">
+  <div class="cohort-text">
+    <p class="w-k">From Table 2.1</p>
+    <h2 class="cohort-title">One cohort, every chapter</h2>
+    <p>RADCURE is the public dataset this thesis released, and every study after Chapter 2 draws a subset from it. Each dot below is one patient. Pick a study to see how many patients it used.</p>
+    <div class="cohort-list" role="radiogroup" aria-label="RADCURE subsets">
+      <button type="button" role="radio" aria-checked="true" data-n="3346" data-c="2" data-def="All patients in the public release"><span class="cl-n">3,346</span><span class="cl-t">Full public release</span><span class="cl-ch">Ch. 2</span></button>
+      <button type="button" role="radio" aria-checked="false" data-n="2994" data-c="3" data-def="Successfully processed primary tumour (GTVp)"><span class="cl-n">2,994</span><span class="cl-t">READII-2-ROQC</span><span class="cl-ch">Ch. 3.3</span></button>
+      <button type="button" role="radio" aria-checked="false" data-n="2552" data-c="3" data-def="M0, 2+ years follow-up, no prior surgery, GTVp available"><span class="cl-n">2,552</span><span class="cl-t">Survival modelling</span><span class="cl-ch">Ch. 3.2</span></button>
+      <button type="button" role="radio" aria-checked="false" data-n="915" data-c="4" data-def="Primary oropharyngeal cancer with radiologist iENE labels"><span class="cl-n">915</span><span class="cl-t">iENE</span><span class="cl-ch">Ch. 4</span></button>
+      <button type="button" role="radio" aria-checked="false" data-n="885" data-c="5" data-def="RADCURE-CT, -DOSE and -DX: planning CT, dose and a panorex"><span class="cl-n">885</span><span class="cl-t">Dosarex</span><span class="cl-ch">Ch. 5</span></button>
+      <button type="button" role="radio" aria-checked="false" data-n="582" data-c="3" data-def="All 19 essential organs at risk delineated"><span class="cl-n">582</span><span class="cl-t">SCARF</span><span class="cl-ch">Ch. 3.4</span></button>
+    </div>
+  </div>
+  <figure class="cohort-viz">
+    <div class="cohort-read"><span class="cr-n" id="crN">3,346</span><span class="cr-of">of 3,346 patients</span><span class="cr-def" id="crDef">All patients in the public release</span></div>
+    <canvas id="waffle" role="img" aria-label="Dot grid of 3,346 RADCURE patients with the selected subset highlighted"></canvas>
+    <figcaption>Counts are exact. Dot positions are illustrative and do not identify which patients overlap between studies.</figcaption>
+  </figure>
+</section>

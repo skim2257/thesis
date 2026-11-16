@@ -1,0 +1,17 @@
+<div class="widget thr" id="thr">
+  <div class="w-head">
+    <p class="w-k">Interactive · Table 4.4</p>
+    <h4 class="w-title">Choosing an operating point in HPV-positive disease</h4>
+    <p class="w-sub">Each dot is one HPV-positive patient. Filled dots were iENE-positive on the radiologist’s read. Ringed dots are the patients the model flags at the chosen threshold.</p>
+    <div class="seg" role="radiogroup" aria-label="Threshold">
+      <button type="button" role="radio" aria-checked="false" data-t="rad">Radiologist</button>
+      <button type="button" role="radio" aria-checked="true" data-t="t25">τ &gt; 0.25</button>
+      <button type="button" role="radio" aria-checked="false" data-t="t50">τ &gt; 0.50</button>
+    </div>
+  </div>
+  <div class="thr-cols">
+    <div class="thr-col" data-cohort="radcure"><p class="thr-name">RADCURE held-out · HPV+ <span>n=109</span></p><div class="dots"></div><p class="thr-read"></p></div>
+    <div class="thr-col" data-cohort="maastro"><p class="thr-name">Maastro external · HPV+ <span>n=101</span></p><div class="dots"></div><p class="thr-read"></p></div>
+  </div>
+  <p class="w-foot">Counts are exact from Table 4.4. Dot order is illustrative.</p>
+</div>
