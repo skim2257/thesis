@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "thesis",
+  "compatibility_date": "2026-11-01",
+  // Static site only: Cloudflare serves docs/ directly, no Worker script needed.
+  "assets": {
+    "directory": "./docs",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  }
+}

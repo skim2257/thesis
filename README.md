@@ -14,6 +14,16 @@ To preview locally:
 python3 -m http.server -d docs 8000
 ```
 
+## Deploying to Cloudflare Workers
+
+`wrangler.jsonc` serves `docs/` as static assets on a Worker named `thesis` (no Worker script).
+With `CLOUDFLARE_API_TOKEN` (needs **Workers Scripts: Edit**) and `CLOUDFLARE_ACCOUNT_ID` set:
+
+```bash
+npm install
+npm run deploy
+```
+
 ## Rebuilding from the manuscript
 
 The page is generated from the dissertation `.docx`. Requires `pandoc` and Python with `beautifulsoup4` and `Pillow`.
